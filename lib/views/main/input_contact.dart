@@ -1,6 +1,5 @@
 import 'package:cloud_contact/models/contact.dart';
 import 'package:cloud_contact/res/dimmentions.dart';
-import 'package:cloud_contact/res/strings.dart';
 import 'package:cloud_contact/view_model/contact_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
