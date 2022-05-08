@@ -19,7 +19,7 @@ flutter pub get
 ```
 
 ## Prepare Firebase API Key and Real Time Database
-![Authentication page](https://github.com/jepriana/cloud-contact/raw/main/screenshots/001.jpg?raw=true)
+![Authentication page](https://github.com/jepriana/cloud-contact/raw/main/screenshots/001.jpg)
 ## Set API Key and Realtime Database End-Point
 
 To run this application, a suitable API server configuration is required. Add a new file named .env to the root project folder. The file is an environment variable file for configuring the API Key and server address. Provide two line parameter with the name API_KEY and BASE_URL followed by an equal sign and value of the API Key and address of the API server.
