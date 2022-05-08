@@ -1,7 +1,9 @@
 import 'package:cloud_contact/res/dimmentions.dart';
+import 'package:cloud_contact/view_model/auth_viwew_model.dart';
 import 'package:cloud_contact/view_model/contact_view_model.dart';
 import 'package:cloud_contact/views/main/input_contact.dart';
 import 'package:cloud_contact/widgets/contact_item.dart';
+import 'package:cloud_contact/widgets/message_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -34,10 +36,18 @@ class _HomeScreenState extends State<HomeScreen> {
         actions: [
           IconButton(
             onPressed: () {
-              Navigator.of(context).pushNamed(InputContact.routName);
+              MessageDialog.showMessageDialog(
+                context,
+                'Logout',
+                'Are you sure want to logout?',
+                'Sure',
+                () {
+                  Provider.of<AuthViewModel>(context, listen: false).logOut();
+                },
+              );
             },
             icon: const Icon(
-              Icons.add_rounded,
+              Icons.logout_rounded,
             ),
           ),
         ],
@@ -67,6 +77,12 @@ class _HomeScreenState extends State<HomeScreen> {
             endIndent: large,
           ),
           itemCount: contacts.length,
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => Navigator.of(context).pushNamed(InputContact.routName),
+        child: const Icon(
+          Icons.add_rounded,
         ),
       ),
     );

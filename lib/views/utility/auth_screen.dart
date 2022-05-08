@@ -89,17 +89,6 @@ class _AuthScreenState extends State<AuthScreen>
           _authData['phone']!,
         );
       }
-
-      // var loginResult = jsonDecode(result) as Map<String, dynamic>;
-      // var status = loginResult['status'];
-      // if (status != 'success') {
-      //   var message = loginResult['message'];
-      //   MessageDialog.showPopUpMessage(
-      //     context,
-      //     'Login $status',
-      //     message,
-      //   );
-      // }
     } catch (error) {
       MessageDialog.showPopUpMessage(
         context,
@@ -322,7 +311,7 @@ class _AuthScreenState extends State<AuthScreen>
                                     color: Colors.transparent,
                                   ),
                                 ),
-                                fillColor: Colors.white38,
+                                fillColor: Colors.white54,
                                 filled: true,
                                 prefixIcon: const Icon(
                                   Icons.smartphone_rounded,
@@ -364,7 +353,7 @@ class _AuthScreenState extends State<AuthScreen>
                                   color: Colors.transparent,
                                 ),
                               ),
-                              fillColor: Colors.white38,
+                              fillColor: Colors.white54,
                               filled: true,
                               prefixIcon: const Icon(Icons.lock_rounded),
                               suffixIcon: IconButton(
