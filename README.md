@@ -41,7 +41,7 @@ Then on the Realtime Database menu note the URL link for the API server end-poin
 
 ## Set API Key and Realtime Database End-Point
 
-To run this application, a suitable API server configuration is required. Add a new file named .env to the root project folder. The file is an environment variable file for configuring the API Key and server address. Provide two line parameter with the name API_KEY and BASE_URL followed by an equal sign and value of the API Key and address of the API server.
+To run this application, a suitable API server configuration is required. Add a new file named `.env` to the root project folder. The file is an environment variable file for configuring the API Key and server address. Provide two line parameter with the name `API_KEY` and `BASE_URL` followed by an equal sign and value of the API Key and address of the API server.
 
 ```
 API_Key=<Your API Key>
