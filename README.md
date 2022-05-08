@@ -19,7 +19,16 @@ flutter pub get
 ```
 
 ## Prepare Firebase API Key and Real Time Database
+Create a new Firebase project. Then on the Authentication menu select Get Started.
 ![Authentication page](https://github.com/jepriana/cloud-contact/blob/main/screenshots/001.png)
+On the Sign-in Method tab, select Email/Password.
+![Authentication Sign-in Method](https://github.com/jepriana/cloud-contact/blob/main/screenshots/002.png)
+Then activate the Email/Password option.
+![Email/Password Authentication option](https://github.com/jepriana/cloud-contact/blob/main/screenshots/003.png)
+In the Firebase project settings, record and save the Web API Key for the configuration process in the Cloud Contact project.
+![Web API Key](https://github.com/jepriana/cloud-contact/blob/main/screenshots/004.png)
+Then on the Realtime Database menu note the URL link for the API server end-point.
+![Real Time Database server URL](https://github.com/jepriana/cloud-contact/blob/main/screenshots/005.png)
 ## Set API Key and Realtime Database End-Point
 
 To run this application, a suitable API server configuration is required. Add a new file named .env to the root project folder. The file is an environment variable file for configuring the API Key and server address. Provide two line parameter with the name API_KEY and BASE_URL followed by an equal sign and value of the API Key and address of the API server.
